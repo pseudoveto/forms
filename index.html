@@ -1,0 +1,68 @@
+<!--This is simple Lofi inspired form validation website made using HTML, CSS, JavaScript-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Validation</title>
+        <link rel="icon" href="88e8d79b5ac203a57d74985cb8ed75c6_t.jpeg" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+           <div class = "typewriter">
+                <h1> Register! </h1>
+                <br>
+            </div>
+
+            <div class="form">
+                <input type="text" id="name" placeholder="Name">
+                <div class="error" id="nameError"></div>
+            </div>
+
+            <div class="form">
+                <input type="email" id="email" placeholder="Email">
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="form">
+                <input type="number" id="phone" placeholder="Phone Number">
+                <div class="error" id="phoneError"></div>
+            </div>
+
+            <div class="form">
+                <input type="number" id="age" placeholder="Age">
+                <div class="error" id="ageError"></div>
+            </div>
+
+            <div class="form">
+                <select id="gender" class="dropdown">
+                    <option disabled selected>Select Gender</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Other</option>
+                </select>
+                <div class="error" id="genderError"></div>
+            </div>
+
+            <button class="validate" onclick="validateForm()">🐈‍⬛</button>
+        
+            <p>Submit</p>
+
+        </div>
+
+        <script src="script.js"></script>
+
+        <footer>
+            <p>&copy VA 2025</p>
+        </footer>
+
+    </body>
+
+</html>
